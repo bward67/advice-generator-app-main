@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="advice-id">Advice #</h2>
+      <h1 class="advice-text">
+        "It is easy to sit up and take notice, what's difficult is getting up
+        and taking action."
+      </h1>
+      <div class="quote-marks">
+        <picture>
+          <!--This will check if your screen is smaller than 420px and if it is it will choose the 1st image and if it is bigger than 420px it will choose the 2nd image-->
+          <source
+            media="(max-width: 420px)"
+            srcset="images/pattern-divider-mobile.svg" />
+          <img src="images/pattern-divider-desktop.svg" alt=""
+        /></picture>
+      </div>
+
+      <div>
+        <!--Must put this button in a div so that it works better with position: absolute-->
+        <button class="dice"><img src="images/icon-dice.svg" alt="" /></button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
